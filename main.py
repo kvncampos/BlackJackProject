@@ -151,6 +151,7 @@ while keep_playing:
     # Intro to the Game Below
     start_game = input("Do you want to play a Game of BlackJack? Type 'y' or 'n'. ").lower().strip()
     if start_game == "y":
+        os.system('cls' if os.name == 'nt' else 'clear')
         blackjack_game()
 
     else:
